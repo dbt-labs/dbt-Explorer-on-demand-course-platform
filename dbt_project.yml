@@ -34,3 +34,10 @@ clean-targets:         # directories to be removed by `dbt clean`
 # instead be materialized as tables. Any models you add to the root of the models folder will 
 # continue to be built as views. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
+
+models:
+  explorer_platform:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
