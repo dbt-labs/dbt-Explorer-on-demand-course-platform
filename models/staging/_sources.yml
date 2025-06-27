@@ -6,12 +6,23 @@ sources:
     tables:
       - name: customers
         description: One record per person who has purchased one or more items
+        config:
+          freshness: null
       - name: orders
         description: One record per order (consisting of one or more order items)
       - name: items
         description: Items included in an order
+        config:
+          freshness: null
       - name: stores
+        description: One record per Jaffle shop store
+        config:
+            freshness: null
       - name: products
         description: One record per SKU for items sold in stores
+        config:
+          freshness: null
       - name: supplies
         description: One record per supply per SKU of items sold in stores
+        config:
+          freshness: null
