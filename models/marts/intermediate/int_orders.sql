@@ -1,3 +1,9 @@
+{{
+    config(
+        materialized='ephemeral'
+    )
+}}
+
 with orders as (
     select * from {{ ref('stg_orders') }}
 ),
