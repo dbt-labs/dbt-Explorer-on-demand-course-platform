@@ -1,11 +1,11 @@
 models:
   - name: fct_orders
-    group: finance
-    access: public
     latest_version: 1
     config:
       contract:
         enforced: true
+      group: finance
+      access: public
     columns:
       - name: order_id
         data_type: varchar
@@ -42,11 +42,11 @@ models:
         data_type: number
       - name: ordered_year
         data_type: number
-    versions:                     
+    versions:
       - v: 1
           ##Matches above! Nothing more needed
         config:
-            alias: fct_orders
+          alias: fct_orders
       - v: 2
         columns:
           - name: order_amount      ##v2 Adds in new column name and date type change
@@ -70,4 +70,3 @@ exposures:
     owner:
       name: Michelle McData
       email: data@jaffleshop.com
-    

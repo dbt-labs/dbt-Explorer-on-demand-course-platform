@@ -3,9 +3,13 @@ groups:
     owner:
       name: Firstname Lastname
       email: finance@jaffleshop.com
-      slack: finance-data
-      github: finance-data-team
+    config:
+      meta:
+        slack: finance-data
+        github: finance-data-team
   - name: product
     owner:
       email: product@jaffleshop.com
-      github: product-data-team
+    config:
+      meta:
+        github: product-data-team
