@@ -3,6 +3,7 @@ models:
     description: staging model for customers source table.
     columns:
       - name: customer_id
+        description: 'Customer ID'
         tests:
           - unique
           - not_null
@@ -10,6 +11,7 @@ models:
     description: staging model for jaffle shop locations
     columns:
       - name: location_id
+        description: 'Location ID'
         tests:
           - unique
           - not_null
@@ -20,6 +22,7 @@ models:
       access: protected
     columns:
       - name: order_item_id
+        description: 'Order Item ID'
         tests:
           - unique
           - not_null
@@ -27,6 +30,7 @@ models:
     description: staging model for orders source table
     columns:
       - name: order_id
+        description: 'Order ID'
         tests:
           - unique
           - not_null
@@ -37,6 +41,7 @@ models:
       access: private
     columns:
       - name: product_id
+        description: 'Product ID'
         tests:
           - unique
           - not_null
@@ -47,5 +52,6 @@ models:
       access: protected
     columns:
       - name: supply_id
+        description: 'Supply ID'
         tests:
           - not_null
