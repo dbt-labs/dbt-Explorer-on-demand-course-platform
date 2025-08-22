@@ -26,7 +26,9 @@ models:
         data_type: number
       - name: ordered_at
         data_type: timestamp_ntz
-      - name: customer_name
+      - name: customer_first_name
+        data_type: varchar
+      - name: customer_last_name 
         data_type: varchar
       - name: location_name
         data_type: varchar

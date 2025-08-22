@@ -18,7 +18,8 @@ joined as (
         orders.order_total,
         orders.tax_paid,
         orders.ordered_at,
-        customers.customer_name,
+        customers.customer_first_name,
+        customers.customer_last_name,
         locations.location_name,
         locations.tax_rate,
         locations.location_opened_at
