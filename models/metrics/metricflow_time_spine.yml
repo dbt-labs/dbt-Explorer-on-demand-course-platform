@@ -1,0 +1,7 @@
+models:
+  - name: metricflow_time_spine
+    config:
+      time_spine:
+        start_date: '2000-01-01'
+        end_date: '2027-01-01'
+        grain: 'day'
