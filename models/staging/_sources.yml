@@ -8,7 +8,7 @@ sources:
         description: One record per person who has purchased one or more items
       - name: orders
         description: One record per order (consisting of one or more order items)
-      - name: items
+      - name: order_items
         description: Items included in an order
       - name: stores
       - name: products
